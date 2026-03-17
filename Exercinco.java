@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercinco{
+public class Exercinco {
     public static void main(String[] args) {
 
         Scanner leia = new Scanner(System.in);
@@ -18,26 +18,29 @@ public class Exercinco{
             System.out.println("Resultado: " + (a + b));
             break;
 
-            case'':
+            case '-':
 
+            System.out.println("Resultado: " + (a - b));
 
+            break;
 
+            case '*':
+           System.out.println("Resultado: " + (a * b));
+           break;
+           case '/':
+            if (b !=0) {
+          System.out.println("Resultado: " + (a / b));
 
-        if (media >= 7) {
-        
-        System.out.println("Aprovado");
-       } else if (media >= 5) {
+          } else {
 
-         System.out.println("Recuperação");
-       } else {
-          System.out.println("Reprovado");
-    
-       
+           System.out.println("Divisão por zero");
 
-        
- 
+          }
+           break;
+           default:
 
+            System.out.println("Operador invalido.");
        }
 
-    }
+      }
 }
