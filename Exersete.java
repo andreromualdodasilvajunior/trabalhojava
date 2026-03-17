@@ -2,24 +2,30 @@ import java.util.Scanner;
 
 public class Exersete {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        Scanner leia = new Scanner(System.in);
+
+        System.out.print("Digite o lado A: ");
+        int a = leia.nextInt();
+
+        System.out.print("Digite o lado B: ");
+        int b = leia.nextInt();
+
+        System.out.print("Digite o lado C: ");
+        int c = leia.nextInt();
 
         if (a + b > c && a + c > b && b + c > a) {
-            if (a == b && b == c) {
 
-        System.out.println("Equilatero");
-        } else if (a == b || a == c || b == c) {
-                System.out.println("Isosceles");
+            if (a == b && b == c) {
+                System.out.println("Triângulo Equilátero");
+            } else if (a == b || a == c || b == c) {
+                System.out.println("Triângulo Isósceles");
             } else {
-                System.out.println("Escaleno");
+                System.out.println("Triângulo Escaleno");
             }
 
         } else {
-            System.out.println("Não forma triangulo");
+            System.out.println("Os valores não formam um triângulo.");
         }
     }
 }

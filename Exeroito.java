@@ -4,24 +4,30 @@ import java.util.Scanner;
 public class Exeroito {
     public static void main(String[] args) {
 
-        Scanner leia = new Scanner(System.in);  
+        Scanner leia = new Scanner(System.in);
 
+        System.out.print("Digite seu peso (kg): ");
         double peso = leia.nextDouble();
+
+        System.out.print("Digite sua altura (m): ");
         double altura = leia.nextDouble();
 
         double imc = peso / (altura * altura);
-    if (imc < 18.5) {
-     System.out.println("Abaixo do peso");
-     } else if (imc < 25) {
-        System.out.println("Peso normal");
+
+        if (imc < 18.5) {
+            System.out.println("Abaixo do peso");
+        } else if (imc < 25) {
+            System.out.println("Peso normal");
         } else if (imc < 30) {
             System.out.println("Sobrepeso");
-            } else {
+        } else {
             System.out.println("Obesidade");
-            }
- String saudavel = (imc >= 18.5 && imc < 25) ? "Dentro da faixa saudável" : "Fora da faixa saudável";
+        }
+
+        String saudavel = (imc >= 18.5 && imc < 25)
+                ? "Dentro da faixa saudável"
+                : "Fora da faixa saudável";
 
         System.out.println(saudavel);
     }
 }
-
