@@ -5,7 +5,7 @@ public class Exerquatro {
 
         Scanner leia = new Scanner(System.in);
         System.out.print("Digite a Temperatura em Celsius: ");
-        int temp= leia.nextInt();
+        int temp = leia.nextInt();
  
         String clima = (temp < 15) ? "Frio" :
                         (temp <= 25) ? "Agradavel" : "Quente";
