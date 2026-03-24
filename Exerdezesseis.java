@@ -9,6 +9,7 @@
 
         if (num % 3 == 0 && num % 5 == 0) {
             System.out.println("Múltiplo de 3 e 5");
+            
         } else if (num % 3 == 0) {
             System.out.println("Múltiplo de 3");
             } else if (num % 5 == 0) {
