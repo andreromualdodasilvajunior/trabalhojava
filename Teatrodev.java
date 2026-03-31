@@ -19,13 +19,13 @@ public class Teatrodev {
 
     public static void main(String[] args) {
 
-        // iniciar tudo livre
         for (int s = 0; s < salas; s++) {
             for (int i = 0; i < linhas; i++) {
                 for (int j = 0; j < colunas; j++) {
                     cadeiras[s][i][j] = 'L';
                 }
-            }
+           
+         }
         }
 
         for (int i = 0; i < 20; i++) {
@@ -104,19 +104,19 @@ public class Teatrodev {
 
         char atual = cadeiras[s][i][j];
 
-        if (tipo == 1) { // reservar
+        if (tipo == 1) { // reserva
             if (atual=='L') {
                 cadeiras[s][i][j] = 'R';
                 System.out.println("Reservado");
             }
         }
 
-        if (tipo == 2) { // comprar
+        if (tipo == 2) { // compra
             if (atual=='L') cadeiras[s][i][j] = 'X';
             else if (atual=='R') cadeiras[s][i][j] = 'X';
         }
 
-        if (tipo == 3) { // cancelar
+        if (tipo == 3) { 
             if (atual=='R') cadeiras[s][i][j] = 'L';
         }
     }
